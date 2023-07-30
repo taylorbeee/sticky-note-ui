@@ -8,7 +8,7 @@ const Header = (props) => {
 
   return (
     <header>
-      <h1 className="app-header__title">Super Sticky Notes</h1>
+      <h1 className="app-header__title">Sticky Notes</h1>
       <aside className="app-header__controls">
         <button onClick={props.addNote} className="add-new">
           + New Note
