@@ -4,15 +4,13 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 30px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(../img/desk-cropped.jpg);
+  background-image: url(../img/desk-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-color: grey;
-  background-blend-mode: soft-light;
 }
 
 input,
@@ -23,25 +21,24 @@ textarea {
 
 .notes-list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  width: 90%;
   padding: 10px;
   margin: 0;
 }
 
 .app-header__title {
-  display: flex;
-  justify-content: center;
   margin: 10px 20px 0px;
   font-family: Arial, sans-serif;
-  color: beige;
+  color: #2e0f0d;
+  font-size: 35px;
+  font-family: Futura;
+  background-color: #666666;
+  text-shadow: 1px 3px 3px #555;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
 }
 
 .app-header__controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 10px 0 0 10px;
 }
 
