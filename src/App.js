@@ -9,10 +9,10 @@ class App extends Component {
         id: Date.now(),
         title: "",
         description: "",
-        doesMatchSearch: true
-      }
+        doesMatchSearch: true,
+      },
     ],
-    searchText: ""
+    searchText: "",
   };
 
   componentDidUpdate() {
@@ -32,7 +32,7 @@ class App extends Component {
       id: Date.now(),
       title: "",
       description: "",
-      doesMatchSearch: true
+      doesMatchSearch: true,
     };
     const newNotes = [newNote, ...this.state.notes];
     this.setState({ notes: newNotes });
