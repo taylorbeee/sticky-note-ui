@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Header from "./Header";
 import Noteslist from "./NotesList";
 
+// Old style class component
+
 class App extends Component {
   state = {
     notes: [
@@ -14,7 +16,7 @@ class App extends Component {
     ],
     searchText: "",
   };
-
+  // switch to useEffect on mount
   componentDidUpdate() {
     const savedNotesString = JSON.stringify(this.state.notes);
     localStorage.setItem("savedNotes", savedNotesString);
