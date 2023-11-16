@@ -29,6 +29,7 @@ class App extends Component {
     }
   }
 
+  // Could this be a useState (ie setNewNote) function ???
   addNote = () => {
     const newNote = {
       id: Date.now(),
@@ -40,6 +41,7 @@ class App extends Component {
     this.setState({ notes: newNotes });
   };
 
+  // Could this be a useEffect function ???
   onType = (editMeId, updatedKey, updatedValue) => {
     const updatedNotes = this.state.notes.map((note) => {
       if (note.id !== editMeId) {
@@ -57,6 +59,7 @@ class App extends Component {
     this.setState({ notes: updatedNotes });
   };
 
+  // Could this be a useEffect function ???
   onSearch = (text) => {
     const lowerSearchText = text.toLowerCase();
     const matchingNotes = this.state.notes.map((note) => {
@@ -75,7 +78,7 @@ class App extends Component {
     });
     this.setState({ notes: matchingNotes, searchText: lowerSearchText });
   };
-
+  // Could this be a useEffect function ???
   removeNote = (noteId) => {
     const newNotes = this.state.notes.filter((note) => note.id !== noteId);
     this.setState({ notes: newNotes });
